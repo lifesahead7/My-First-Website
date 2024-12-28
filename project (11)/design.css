@@ -1,0 +1,641 @@
+/* General Wrapper */
+#wrapper {
+    width: 1500px;
+    max-width: 1680px;
+    margin: 5px auto;
+}
+
+/* General Styles */
+body {
+    font-family: 'Comic Sans MS', sans-serif;
+    background: linear-gradient(270deg, #004e92, #000428);
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    font-family: 'Papyrus', sans-serif;
+    font-size: 30px;
+    color: #fff;
+    background-image: linear-gradient(to left, #A44322, rgba(0, 0, 0, 0) 100%), url('https://assets.science.nasa.gov/dynamicimage/assets/science/astro/universe/internal_resources/402/Carina_Nebula-1.jpeg?w=1024&format=webp&fit=clip&crop=faces%2Cfocalpoint');
+    background-position: right;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    padding: 10px 20px;
+    border-radius: 10px 10px 0 0;
+    text-align: center;
+}
+
+h2 {
+    font-family: 'Papyrus', sans-serif;
+    font-size: 25px;
+    text-align: center;
+    padding: 20px;
+}
+
+/* Navigation */
+nav ul {
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+    display: inline-block;
+
+}
+
+nav ul li a {
+    color: #F8BC04;
+    text-decoration: none;
+    font-weight: bold;
+    border: 1px outset;
+    box-shadow: 0 2px 4px #000;
+    padding: 10px;
+}
+
+/* Box around h2 */
+main section h2 {
+    background: #F8BC04;
+    color: #282157;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    text-align: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    margin-right: 20px;
+    width: auto;
+    transition: transform 0.5s ease;
+
+}
+
+main section h2:hover {
+    transform: scale(1.05); /* Slight zoom on hover */
+    transition: transform 0.5s ease;
+}
+
+
+/* Celestial Body Section */
+.celestial-body {
+    font-size: 15px;
+    border: 2px solid #A44322;
+    border-radius: 50px;
+    padding: 20px;
+    margin: 100px auto; /* Add spacing between sections */
+    background: #282157;
+    max-width: 800px;
+}
+
+/* Celestial Body Content */
+.celestial-body img {
+    max-width: 100%;
+    border-radius: 50px;
+    border: 5px solid #F8BC04;
+}
+
+.celestial-body h3 {
+    color: #DA8A8B;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.celestial-body ul {
+    list-style: none;
+    padding: 0;
+}
+
+.celestial-body p {
+    margin-top: 10px;
+}
+
+/* Construction Page Styles */
+.construction-message {
+    text-align: center;
+    background: linear-gradient(145deg, #1e293b, #374151);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    max-width: 600px;
+    margin: 50px auto;
+    color: #F8BC04;
+}
+
+.construction-message h2 {
+    font-size: 2rem;
+    color: #DA8A8B;
+    margin-bottom: 15px;
+}
+
+.construction-message p {
+    font-size: 1rem;
+    line-height: 1.6;
+    color: #e5e7eb;
+}
+
+.construction-message a {
+    color: #F8BC04;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.construction-message a:hover {
+    color: #DA8A8B;
+    transition: color 0.3s ease;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: space-between; /* Evenly spaces items */
+    gap: 20px; /* Space between items */
+    padding: 20px;
+    max-width: 1200px;
+    margin: 50px auto;
+}
+
+.gallery figure {
+    background: linear-gradient(145deg, #1e293b, #374151);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease;
+    flex: 1 1 calc(50% - 20px); /* Takes 50% width minus gap, adjusts for wrapping */
+}
+
+.gallery figure:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+}
+
+.gallery figcaption {
+    color: #F8BC04;
+    font-size: 1rem;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+/* Form Styling */
+form {
+    background: linear-gradient(145deg, #1e293b, #374151);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px auto;
+    max-width: 500px;
+    text-align: left;
+}
+
+form label {
+    display: block;
+    color: #F8BC04;
+    margin-bottom: 5px;
+}
+
+form input, form select, form span {
+    width: 100%;
+    padding: 10px;
+    margin: 0 auto;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+}
+
+form input, form select {
+    background: #282157;
+    color: #F8BC04;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 50px;
+    border: none;
+    font-size: 1rem;
+}
+
+form span {
+    background: #F8BC04;
+    color: #282157;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+form span:hover {
+    background: #DA8A8B;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+span {
+    background: #F8BC04;
+    color: #282157;
+    cursor: pointer;
+    transition: background-color 0.5s, transform 0.5s;
+}
+
+/* Answer Display */
+div#result, div#light-result, div#escape-result, div#orbit-result {
+    display: block;
+    background: #1e293b;
+    color: #F8BC04;
+    padding: 10px 15px;
+    border-radius: 8px;
+    margin: 10px auto;
+    max-width: 480px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-family: 'Comic Sans MS', sans-serif;
+    border: 2px solid #F8BC04;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Answer Placeholder */
+div#result:empty::before, div#light-result:empty::before, div#escape-result:empty::before, div#orbit-result:empty::before {
+    content: "Result will appear here...";
+    color: #94a3b8;
+    font-style: italic;
+    display: block;
+}
+
+
+.gallery-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.gallery figure {
+    background: linear-gradient(145deg, #1e293b, #374151);
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    flex: 0 1 calc(45% - 20px); /* Two items per row with spacing */
+}
+
+.gallery img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.gallery img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 20px #F8BC04;
+}
+
+.gallery figcaption {
+    color: #F8BC04;
+    font-size: 1rem;
+    text-shadow: 0 0 5px #F8BC04;
+    font-family: 'Comic Sans MS', sans-serif;
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: flex-start; /* Align items to the left */
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(145deg, #1e293b, #374151); /* Futuristic gradient background */
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    width: 80%; /* Ensure width is consistent */
+    max-width: 800px; /* Limit maximum width */
+    text-align: left; /* Align text to the left */
+    transition: transform 0.5s ease;
+
+}
+
+.hero:hover {
+    transform: translateY(-10px); /* Subtle hover effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+    transition: transform 0.5s ease;
+
+}
+
+.hero img {
+    max-width: 500px; /* Smaller image size */
+    height: auto;
+    border-radius: 50%; /* Circular images for modern look */
+    margin-bottom: 20px;
+    border: 3px solid #F8BC04; /* Accent border */
+    transition: transform 0.5s ease;
+}
+
+.hero img:hover {
+    transform: scale(1.1); /* Slight zoom on hover */
+    transition: transform 0.5s ease;
+}
+
+.hero h3 {
+    color: #F8BC04; /* Accent color for headings */
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.hero p {
+    font-size: 1rem;
+    line-height: 1.6; /* Add space between lines for readability */
+    color: #e5e7eb; /* Light text for modern readability */
+    margin-bottom: 10px; /* Add space between paragraphs */
+}
+
+.hero ul {
+    list-style: disc; /* Use bullet points for lists */
+    padding-left: 20px; /* Add left padding for indentation */
+    color: #94a3b8; /* Slightly lighter text for lists */
+}
+
+.hero ul li {
+    margin-bottom: 5px; /* Add spacing between list items */
+}
+
+/* Section Animations for index.html */
+.home-main section {
+    opacity: 0;
+    transform: translateX(100px);
+    transition: transform 0.6s ease-out, opacity 0.6s ease-out;
+}
+
+.home-main section:nth-child(even) {
+    transform: translateX(-100px); /* Slide in from the left for even sections */
+}
+
+.home-main section.animate-section {
+    opacity: 1;
+    transform: translateX(0); /* Slide to the center */
+}
+
+.meet-container {
+    background: linear-gradient(145deg, #1e293b, #374151);
+    padding: 20px;
+    max-width: 900px;
+    margin: 50px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    color: #e5e7eb;
+    font-family: 'Comic Sans MS', sans-serif;
+    text-align: center; /* Align content centrally */
+}
+
+.meet-container h1, .meet-container h2, .meet-container h3 {
+    text-align: center;
+    color: #F8BC04;
+    margin-bottom: 20px;
+}
+
+.meet-container table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+    background: #282157; /* Match the container background */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Maintain table border consistency */
+}
+
+.meet-container table th, .meet-container table td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #374151; /* Subtle dividers */
+}
+
+.meet-container table th {
+    background: #282157;
+    color: #F8BC04;
+    font-weight: bold;
+}
+
+.meet-container table td a {
+    color: #DA8A8B;
+    text-decoration: none;
+}
+
+.meet-container table td a:hover {
+    text-decoration: underline;
+}
+
+.meet-container form {
+    background: linear-gradient(145deg, #1e293b, #374151);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin: 20px 0;
+}
+
+.meet-container form label {
+    color: #F8BC04;
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+}
+
+.meet-container form input, .meet-container form select, .meet-container form textarea, .meet-container form button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.meet-container form input, .meet-container form select, .meet-container form textarea {
+    background: #282157;
+    color: #e5e7eb;
+}
+
+.meet-container form button {
+    background: #F8BC04;
+    color: #282157;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.meet-container form button:hover {
+    background: #DA8A8B;
+    color: #fff;
+    transform: scale(1.05); /* Subtle hover effect */
+}
+.glow-title {
+    font-size: 2rem;
+    color: #F8BC04;
+    text-shadow: 0 0 10px #F8BC04, 0 0 20px #DA8A8B, 0 0 30px #DA8A8B;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.glow-text {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #e5e7eb;
+    text-shadow: 0 0 5px #DA8A8B, 0 0 10px #282157;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.portrait-image-container {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.portrait-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border: 3px solid #F8BC04;
+    box-shadow: 0 0 15px #DA8A8B;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portrait-image:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 25px #DA8A8B;
+}
+
+.contact-table th, .contact-table td {
+    text-align: left;
+    padding: 10px;
+    font-size: 1rem;
+    color: #e5e7eb;
+}
+
+.contact-table th {
+    background: #282157;
+    color: #F8BC04;
+    text-shadow: 0 0 5px #F8BC04;
+}
+
+.contact-table td a {
+    color: #DA8A8B;
+    text-decoration: none;
+}
+
+.contact-table td a:hover {
+    color: #F8BC04;
+    text-decoration: underline;
+}
+
+
+/* Sidebar Styles */
+.sidebar {
+    width: 60px; /* Collapsed width */
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    background: linear-gradient(270deg, #004e92, #000428);
+    overflow: hidden;
+    transition: width 0.5s ease;
+    z-index: 1000;
+}
+
+.sidebar:hover {
+    width: 250px; /* Expanded width */
+    transition: width 0.5s ease;
+}
+
+.sidebar h2 {
+    font-size: 1.5rem;
+    color: #F8BC04;
+    margin: 20px;
+    opacity: 0; /* Hidden when collapsed */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar:hover h2 {
+    opacity: 1; /* Visible when expanded */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 20px 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    margin: 20px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    color: #F8BC04;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    opacity: 0; /* Hidden when collapsed */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar:hover ul li a {
+    opacity: 1; /* Visible when expanded */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar ul li a:hover {
+    background: #DA8A8B;
+    color: #fff;
+    transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+.sidebar .newsletter {
+    margin-top: 20px;
+    padding: 10px;
+    opacity: 0; /* Hidden when collapsed */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar:hover .newsletter {
+    opacity: 1; /* Visible when expanded */
+    transition: opacity 0.5s ease;
+}
+
+.sidebar .newsletter h3 {
+    font-size: 1rem;
+    color: #F8BC04;
+    margin-bottom: 10px;
+}
+
+.sidebar .newsletter input {
+    width: calc(100% - 20px);
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+}
+
+/* Adjust Main Content for Sidebar */
+.main-content {
+    margin-left: 270px; /* Offset by sidebar width */
+    padding: 20px;
+    background: linear-gradient(270deg, #004e92, #000428); /* Maintain existing background gradient */
+    min-height: 100vh;
+    box-sizing: border-box;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background: #051427;
+    color: #F8BC04;
+    padding: 20px;
+    margin-top: 20px;
+}

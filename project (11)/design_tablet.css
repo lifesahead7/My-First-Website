@@ -1,0 +1,47 @@
+/* General Adjustments for Tablet */
+body {
+    font-size: 16px; /* Slightly larger text for better readability */
+}
+
+.sidebar {
+    width: 200px; /* Reduce sidebar width */
+}
+
+.sidebar:hover {
+    width: 200px; /* Keep sidebar from expanding further */
+}
+
+.main-content {
+    margin-left: 220px; /* Adjust margin to accommodate smaller sidebar */
+}
+
+/* Gallery Adjustments */
+.gallery figure {
+    flex: 0 1 calc(50% - 10px); /* Adjust spacing for two columns on tablets */
+}
+
+/* Form Adjustments */
+form {
+    max-width: 400px; /* Smaller width for forms */
+}
+
+/* Meet the Developer Page */
+.portrait-image {
+    width: 150px;
+    height: 150px; /* Smaller profile image */
+}
+
+/* Adjust Headings and Text */
+.glow-title {
+    font-size: 1.8rem; /* Slightly smaller titles */
+}
+
+.glow-text {
+    font-size: 1rem;
+}
+
+/* Footer Adjustments */
+footer {
+    padding: 15px;
+    font-size: 0.9rem; /* Smaller footer text */
+}

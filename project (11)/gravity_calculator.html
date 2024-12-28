@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quick Math for Astronomy</title>
+    <script src="scripts.js"></script>
+    <link rel="stylesheet" href="design.css">
+    <link rel="stylesheet" href="design_tablet.css" media="only screen and (max-width: 1000px)">
+    <link rel="stylesheet" href="design_mobile.css" media="only screen and (max-width: 600px)">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>Elysium</h2>
+        <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="heroes.html">Heroes of Astronomy</a></li>
+        <li><a href="neighborhood.html">Our Solar System</a></li>
+        <li><a href="cosmos.html">The Greater Cosmos</a></li>
+        <li><a href="gravity_calculator.html">Quick Maths for Astronomy</a></li>
+        <li><a href="dive.html">Dive into the Abyss</a></li>
+        <li><a href="meet.html">Meet the Developer</a></li>
+        </ul>
+        <div class="newsletter">
+            <h3>Subscribe for Updates</h3>
+            <input type="email" placeholder="Enter Email Address">
+        <a href="construction.html">
+          <span class="link-button">Reach out to Tony</span>
+        </a>
+        </div>
+    </div>
+    <div class="main-content">
+        <header>
+            <h1>Quick Math for Astronomy</h1>
+        </header>
+        <main>
+            <section>
+                <h2>Calculate Your Weight</h2>
+                <form id="gravity-form">
+                    <label for="weight">Your Weight on Earth (kg):</label>
+                    <input type="number" id="weight" placeholder="Enter your weight" required>
+                    <label for="body">Select a Celestial Body:</label>
+                    <select id="body">
+                        <option value="sun">Sun</option>
+                        <option value="moon">Moon</option>
+                        <option value="mars">Mars</option>
+                        <option value="jupiter">Jupiter</option>
+                        <option value="blackhole">Black Hole</option>
+                    </select>
+                    <button type="button" onclick="calculateWeight()">Calculate</button>
+                </form>
+                <section>
+                  <div id="result"></div>
+                </section>
+            </section>
+
+            <section>
+                <h2>Light Travel Time Calculator</h2>
+                <form id="light-form">
+                    <label for="distance">Distance (in light-years):</label>
+                    <input type="number" id="distance" placeholder="Enter distance" required>
+                    <button type="button" onclick="calculateLightTravelTime()">Calculate Light Travel Time</button>
+                </form>
+                <section>
+                  <div id="light-result"></div>
+                </section>
+            </section>
+
+            <section>
+                <h2>Escape Velocity Calculator</h2>
+                <form id="escape-form">
+                    <label for="mass">Mass of Body (kg):</label>
+                    <input type="number" id="mass" placeholder="Enter mass" required>
+                    <label for="radius">Radius of Body (m):</label>
+                    <input type="number" id="radius" placeholder="Enter radius" required>
+                    <button type="button" onclick="calculateEscapeVelocity()">Calculate Escape Velocity</button>
+                </form>
+                <section>
+                  <div id="escape-result"></div>
+                </section>
+
+            </section>
+
+            <section>
+                <h2>Orbital Period Calculator</h2>
+                <form id="orbit-form">
+                    <label for="semi-major-axis">Semi-Major Axis (AU):</label>
+                    <input type="number" id="semi-major-axis" placeholder="Enter axis length" required>
+                    <button type="button" onclick="calculateOrbitalPeriod()">Calculate Orbital Period</button>
+                </form>
+                <section>
+                  <div id="orbit-result"></div>
+                </section>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Elysium Space Project</p>
+        </footer>
+    </div>
+</body>
+</html>
