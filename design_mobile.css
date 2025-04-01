@@ -1,0 +1,57 @@
+/* General Adjustments for Mobile */
+body {
+    font-size: 14px; /* Smaller font size for compact screens */
+}
+
+.sidebar {
+    width: 150px; /* Further reduce sidebar width */
+}
+
+.sidebar ul li a {
+    font-size: 0.9rem; /* Smaller font size for navigation links */
+    padding: 8px 15px; /* Reduce padding */
+}
+
+.main-content {
+    margin-left: 160px; /* Adjust margin for smaller sidebar */
+    padding: 10px; /* Reduce overall padding */
+}
+
+/* Gallery Adjustments */
+.gallery figure {
+    flex: 0 1 calc(100% - 10px); /* Single column layout for small screens */
+}
+
+/* Form Adjustments */
+form {
+    max-width: 300px; /* Narrower form for mobile */
+    padding: 10px; /* Reduce padding */
+}
+
+form input, form select, form button {
+    padding: 8px; /* Smaller input and button padding */
+    font-size: 0.9rem; /* Reduce font size */
+}
+
+/* Meet the Developer Page */
+.portrait-image {
+    width: 100px;
+    height: 100px; /* Smaller profile image */
+    margin-bottom: 15px; /* Adjust spacing */
+}
+
+/* Adjust Headings and Text */
+.glow-title {
+    font-size: 1.5rem; /* Reduce title size for smaller screens */
+}
+
+.glow-text {
+    font-size: 0.9rem;
+    line-height: 1.5; /* Adjust line spacing for readability */
+}
+
+/* Footer Adjustments */
+footer {
+    padding: 10px;
+    font-size: 0.8rem; /* Smaller footer text */
+}
